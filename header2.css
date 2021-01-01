@@ -1,0 +1,463 @@
+html, body{
+    font-family: sans-serif;
+    margin : 0;
+    padding: 0;
+    position: relative;
+    width: 100%;  
+}
+
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    position: relative;
+    top: 5px;
+    max-width: 100%;
+    height: 136px;   
+    /* background-image: url("../src/img/Hintergrund1.png");
+    background-position:75px 5px ;
+    background-size: 1465px auto;
+    background-repeat: no-repeat; */
+    
+}
+
+.header-border{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 120px;
+    border: 15px groove rgb(173, 37, 37);
+    border-radius: 10%;
+    display: block; 
+    margin: 0 auto;   
+    border-bottom-right-radius: 100%25px;
+    border-bottom-left-radius: 100%25px;
+    box-shadow: 5px 5px 5px 5px black;
+    
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    display: block;   
+    margin: 0 auto;    
+}
+
+.row:first-child{
+    border-bottom: 2px solid green;
+}
+
+.col-3{
+    width: 50%;
+    display: block;
+    height: 60px;
+    background-color: rgba(241,240,240, .5);
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-3:nth-of-type(even){
+    border-left: 2px solid green;
+}
+
+
+
+header h1{
+    color: rgb(241, 240, 240);  
+
+    display: inline-block;
+    margin: 0;
+    top: 6.28px;
+    padding: 0 2rem;
+    position: relative;
+    left:34.68%;
+    border: 5px groove rgb(173, 37, 37);
+    border-radius: 25%;
+    background-color: blue;
+}
+
+header span{
+
+    display:inline-block;
+    position: relative;
+    left: 64.58%;
+    top: 11.785px;
+    font-size: 2rem;
+    color: blue;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px green; 
+}
+
+header nav>ul>li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1rem;
+    background-color: green;
+    padding: 0 .5rem;
+    color: rgb(241, 240, 240);  
+    position: relative;
+    
+    
+
+}
+
+header nav>ul{
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 24%;
+    top: 14.263px;
+    width: 345px;
+
+}
+
+#suchfeld{
+   color:  rgb(173, 37, 37);
+    width: 300px;
+    height: 75%;
+    position: relative;
+    top: 7.5px;
+    left: 20px;
+    font-size: 1.25rem;
+}
+
+#suchfeld:focus{
+    color:  rgb(173, 37, 37);
+    border: 5px solid green;
+    
+ }
+
+.container label{
+    color: blue;
+    position: relative;
+    top: .5rem;
+    left: .5rem;
+}
+
+li>a{
+    color: rgb(241, 240, 240);  
+    text-decoration: none;
+}
+
+li:hover{
+   border: 3px solid rgb(173, 37, 37);
+   padding: 0 5px;
+   border-radius: 25%;;
+}
+
+li:visited{
+    color: rgb(241, 240, 240);  
+   
+ }
+
+ header h1:hover{
+
+   box-shadow: 2px 2px 5px 2px rgb(44, 42, 42);
+     
+ }
+
+ @keyframes logo-spin{
+
+    
+    0% {transform: rotate(0deg);  border: 2px groove rgb(173, 37, 37);}
+    100% { transform: rotate(36000deg); color: yellow; scale: (2,2);  font-size: 3rem; border: 10px groove blue;}
+ }
+
+ header span:hover{
+   
+     padding: 10px;
+     border-radius: 50%;
+     animation: logo-spin;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     display: inline-block;
+     
+ }
+ 
+@media(max-width: 1240px){
+    header h1{
+        top: 20%;
+       font-size: 1.5rem;
+    }
+    
+    header span{
+                
+        font-size: 1.5rem;
+    }
+
+    header nav>ul{ 
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+       
+    }
+
+    header nav>ul>li{
+        
+        margin-right: .85rem;
+        padding: 0 .5rem;
+        
+    }
+    
+    #suchfeld{
+       
+        width: 40%;
+        height: 75%;
+        position: relative;
+        top: 7.5px;
+        left: 5%;
+        font-size: 1rem;
+    }
+    
+    .container label{
+      
+        position: relative;
+        left: 1%;
+        
+    }
+   
+}
+
+@media(max-width: 1024px){
+    header h1{
+        top: 20%;
+       font-size: 1.20rem;
+    }
+    
+    header span{
+        top: 25%;
+        font-size: 1.20rem;
+    }
+
+    header nav>ul{ 
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 13%;
+       
+    }
+
+    header nav>ul>li{
+        
+        margin-right: .75rem;
+        padding: 0 .5rem;
+        
+    }
+    
+    #suchfeld{
+       
+        width: 35%;
+        height: 60%;
+        position: relative;
+        top: 7.5px;
+        left: 5%;
+        font-size: 1rem;
+    }
+    
+    .container label{
+      
+        position: relative;
+        left: 1%;
+        
+    }
+   
+}
+
+@media(max-width: 900px){
+    header h1{
+        top: 20%;
+        left: 30%;
+       font-size: 1.20rem;
+    }
+    
+    header span{
+        top: 25%;
+        font-size: 1.20rem;
+    }
+
+    header nav>ul{ 
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+       
+    }
+
+    header nav>ul>li{
+        
+        margin-right: .6rem;
+        padding: 0 .4rem;
+        
+    }
+    
+    #suchfeld{
+       
+        width: 35%;
+        height: 60%;
+        position: relative;
+        top: 7.5px;
+        left: 5%;
+        font-size: .5rem;
+    }
+    
+    .container label{
+      
+        position: relative;
+        left: 1%;
+        
+    }
+   
+}
+
+@media(max-width: 768px){
+    header h1{
+        top: 20%;
+        left: 30%;
+       font-size: 1.00rem;
+    }
+    
+    header span{
+        top: 25%;
+        font-size: 1.00rem;
+    }
+
+    header nav>ul{ 
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+       
+    }
+
+    header nav>ul>li{
+        
+        margin-right: .35rem;
+        padding: 0 .35rem;
+        font-size: .85rem
+    }
+    
+    #suchfeld{
+       
+        width: 35%;
+        height: 60%;
+        position: relative;
+        top: 7.5px;
+        left: 5%;
+        font-size: .75rem;
+    }
+    
+    .container label{
+      
+        position: relative;
+        left: 1%;
+        
+    }
+   
+}
+
+@media(max-width: 576px){
+    header h1{
+        top: 22%;
+        left: 30%;
+       font-size: 1.0rem;
+       left: 27%;
+       padding: 0 1rem;
+    }
+    
+    header span{
+        top: 25%;
+        font-size: 1.20rem;
+    }
+
+    header nav>ul{ 
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+       
+    }
+
+    header nav>ul>li{
+        
+        margin-right: .20rem;
+        padding: 0 .20rem;
+        font-size: .70rem
+    }
+    
+    #suchfeld{
+       
+        width: 35%;
+        height: 50%;
+        position: relative;
+        top: 22%;
+        left: 5%;
+        font-size: .75rem;
+    }
+    
+    .container label{
+      
+        position: relative;
+        left: 2%;
+        top: 22%;
+        font-size: .75rem;
+        
+    }
+    @media(max-width: 480px){
+        header h1{
+            top: 22%;
+            left: 30%;
+           font-size: 1.0rem;
+           left: 27%;
+           padding: 0 1rem;
+        }
+        
+        header span{
+            top: 25%;
+            font-size: 1.20rem;
+        }
+    
+        header nav>ul{ 
+            display: inline-block;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+           
+        }
+    
+        header nav>ul>li{
+            
+            margin-right: .20rem;
+            padding: 0 .20rem;
+            font-size: .70rem
+        }
+        
+        #suchfeld{
+           
+            width: 35%;
+            height: 50%;
+            position: relative;
+            top: 22%;
+            left: 5%;
+            font-size: .6rem;
+        }
+        
+        .container label{
+          
+            position: relative;
+            left: 2%;
+            top: 22%;
+            font-size: .75rem;
+            
+        }
+     
+   
+}
+}
